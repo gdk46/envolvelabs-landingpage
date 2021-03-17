@@ -1,0 +1,39 @@
+#-> FRONT-END
+
+# dependencies
+/envolvelabs/node_modules
+/envolvelabs/.pnp
+/envolvelabs.pnp.js
+
+# testing
+/envolvelabs/coverage
+
+# production
+/envolvelabs/build
+
+# misc
+/envolvelabs/.DS_Store
+/envolvelabs/.env.local
+/envolvelabs/.env.development.local
+/envolvelabs/.env.test.local
+/envolvelabs/.env.production.local
+
+/envolvelabs/npm-debug.log*
+/envolvelabs/yarn-debug.log*
+/envolvelabs/yarn-error.log*
+
+
+#-> LARAVEL (BACK-END)
+/engine/node_modules
+/engine/public/hot
+/engine/public/storage
+/engine/storage/*.key
+/engine/vendor
+/engine/.env
+/engine/.env.backup
+/engine/.phpunit.result.cache
+/engine/docker-compose.override.yml
+/engine/Homestead.json
+/engine/Homestead.yaml
+/engine/npm-debug.log
+/engine/yarn-error.log
