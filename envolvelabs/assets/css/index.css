@@ -1,0 +1,122 @@
+/**
+*
+*
+*
+*
+*
+*/
+
+.uk-fixed-navigation {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+}
+
+.uk-navbar-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 540px) {
+  .uk-navbar-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/*  */
+.banner {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.banner .banner-overlay {
+  height: 100vh;
+  background-color: rgba(22, 22, 22, 0.863);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 540px) {
+  .banner .banner-overlay {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.banner .banner-overlay h1 {
+  color: #f7f7f7;
+  font-weight: 400;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.banner .banner-overlay p {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 540px) {
+  .banner .banner-overlay h1 {
+    font-size: 48px;
+    width: 70%;
+  }
+
+  .banner .banner-overlay p {
+    width: 70%;
+  }
+}
+
+.home-methodology h1 {
+  color: rgba(254, 255, 247, 0.85);
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.home-methodology p.paragraph {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10rem;
+}
+
+@media only screen and (min-width: 540px) {
+  .home-methodology h1 {
+    color: rgba(254, 255, 247, 0.85);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .home-methodology p.paragraph {
+    color: var(--color-white);
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10rem;
+  }
+}
+
+.home-methodology h3.card-title {
+  font-size: 30px;
+  color: rgba(254, 255, 247, 0.85);
+  margin-top: 1.5rem;
+  cursor: default;
+}
+
+.home-methodology p.card-paragraph {
+  font-size: 20px;
+  cursor: default;
+}
+
+@media only screen and (min-width: 540px) {
+  .home-methodology p.card-paragraph:hover {
+    color: var(--color-white);
+    transition: all 0.2s;
+  }
+}

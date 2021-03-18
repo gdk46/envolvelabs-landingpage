@@ -1,0 +1,54 @@
+/* navbar */
+.uk-fixed-navigation {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1030;
+}
+
+.uk-navbar-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* end navbar */
+
+
+.uk-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media only screen and (min-width: 540px) {
+    .uk-container {
+        padding-left: 2.4rem;
+        padding-right: 4rem;
+    }
+}
+
+/* button */
+.uk-button-modify-primary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  transition: all 0.3s;
+}
+
+.uk-button-modify-primary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  border: 1px solid var(--color-primary);
+}
+
+.uk-button-modify-white {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  transition: all 0.3s;
+}
+
+.uk-button-modify-white:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 1px solid var(--color-white);
+}

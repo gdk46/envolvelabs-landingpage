@@ -1,0 +1,13 @@
+:root {
+    --color-primary:#f2e131;
+    --color-green-200:#dfe0d9;
+    --color-green-300:#606160;
+    --color-white:#FFF;
+    --color-black:#1c1d1e;
+}
+*{
+    list-style: none;
+}
+body {
+    background-color: var(--color-black);
+}

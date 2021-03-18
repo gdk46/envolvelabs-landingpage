@@ -1,146 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        :root {
-            --grap: 10px;
-
-            --primary: #f4d939;
-            --secundary: #606160;
-            --green: #252527;
-            --white: #ffffff;
-            --dark: #1c1d1f;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            outline: none;
-            font-size: 100%;
-            font: inherit;
-            text-decoration: none;
-            box-sizing: border-box;
-            list-style: none;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        body {
-            background-color: var(--dark);
-        }
-
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #e2e2e2;
-            padding: 0.35rem 1rem;
-            margin-top: 0.25rem;
-            margin-bottom: 0.25rem;
-            font-size: 1rem;
-            text-align: center;
-            line-height: 1.5;
-            transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
-                border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-            border: 1px solid transparent;
-        }
-
-        .btn.btn-lg {
-            padding: 0.25rem 1rem;
-            font-size: 1.3rem;
-        }
-
-        .btn.btn-otl {
-            background-color: transparent;
-            border-width: 1px;
-            border-style: solid;
-        }
-
-        .btn-primary {
-            border-color: var(--primary);
-            color: var(--primary);
-        }
-
-        .btn-white {
-            border-color: var(--white);
-            color: var(--white);
-        }
-
-
-        /*  */
-        section {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        section #wllp {
-            width: 100%;
-        }
-
-        @media (min-width: 720px) {
-            section {
-                padding-left: 4rem;
-                padding-right: 4rem;
-            }
-            section #wllp {
-                width: 50%;
-            }
-        }
-
-        @media (min-width: 450px) {
-            .btn.btn-lg {
-                padding: 0.25rem 2rem;
-                font-size: 1.5rem;
-            }
-        }        
-
-        section .section-content {
-            padding-top: 6rem;
-        }
-
-        section .section-title {
-            font-size: 41px;
-            margin-bottom: 1rem;
-            color: #dedfd8;
-        }
-
-        section .subtitle {
-            font-size: 20px;
-            margin-bottom: 1.5em;
-            color: #dedfd8;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desenvolvimento de software e criação de websites Envolve Labs</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32.webp" type="image/x-icon">
+    <!-- STYLE -->
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="assets/css/modify-uikit.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- END STYLE -->
 </head>
 
 <body>
-    <header>
-        <nav>
-            <img src="" alt="">
-            <a href=""></a>
+    <main>
+        <nav class="uk-navbar-container uk-navbar-transparent uk-fixed-navigation" uk-navbar>
+            <div class="uk-navbar-left">        
+                <img src="./assets/img/logo.webp" alt="" width="150" height="80">
+            </div>
         </nav>
-    </header>
 
-    <section>
-        <div class="section-content" id="wllp">
-            <h1 class="section-title">
-                Melhores práticas de desenvolvimento, otimizando investimentos, entregando melhores resultados.
-            </h1>
-            <h2 class="subtitle">
-                Economize até 60% nos seus projetos de desenvolvimento de software.
-            </h2>
+        <!-- BANNER -->
+        <section class="fullbanner section">
+            <div class="container">
+                <div uk-parallax="bgy: -300" class="banner" data-src="assets/img/wallpaper-banner.jpeg" uk-img>
+                    <div class="uk-section banner-overlay">
+                        <h1 class="banner-titel">
+                            Melhores práticas de desenvolvimento, otimizando investimentos, entregando
+                            resultados.
+                        </h1>
+    
+                        <p>Economize até 60% nos seus projetos de desenvolvimento de software.</p>
+    
+                        <a href="javascript::0" class="uk-button uk-button-modify-primary" rel="noopener">Contrate
+                            agora</a>
+                        <a href="javascript::0" class="uk-button uk-button-modify-white" rel="noopener">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- home-methodology -->
+        <section class="uk-section home-methodology">
+            <div class="uk-container">
+                <h1>Envolva-se, invista em tecnologia com mais controle.</h1>
+                <p class="paragraph">
+                    Nosso objetivo é que você pare de perder tempo, dinheiro e tenha liberdade para colocar suas ideias em prática, criando produtos digitais que entreguem valor e novas experiências para seus clientes.
+                </p>
 
-            <a href="" class="btn btn-lg btn-otl btn-primary">Contrate agora</a>
-            <a href="" class="btn btn-lg btn-otl btn-white">Saiba mais</a>
+                <div class="uk-child-width-expand@s" uk-grid>
+                    <div>
+                        <img src="https://envolvelabs.com/wp-content/uploads/2021/01/desenvolvimento-de-software-scrum-entregas-ageis.svg" class="attachment-thumbnail size-thumbnail" alt="Projetos digitais com mais velocidade na entrega" loading="lazy" width="110" height="110">
+                        <h3 class="card-title">Entregas mais rápidas</h1>
+                        <p class="card-paragraph">
+                            Você não precisa esperar meses para ver o seu produto digital sair do papel, utilizamos práticas modernas de desenvolvimento que resultam em entregas mais ágeis, permitindo ter acesso à aplicação de forma gradual e não apenas ao final do projeto.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <img src="https://envolvelabs.com/wp-content/uploads/2021/01/desenvolvimento-de-software-scrum-entrega-de-valor.svg" class="attachment-thumbnail size-thumbnail" alt="Entregas em partes de acordo com sua necessidade" loading="lazy" width="110" height="110">
+                        <h3 class="card-title">Entregas mais rápidas</h1>
+                        <p class="card-paragraph">
+                            O acesso antecipado ao seu produto lhe permitirá coletar feedbacks dos seus usuários com mais velocidade, dessa forma, você pode investir nos recursos que realmente precisa ou que sejam mais relevantes no momento. O plano é que cada entrega possa gerar valor ao seu produto.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="https://envolvelabs.com/wp-content/uploads/2021/01/desenvolvimento-de-software-scrum-escopo-flexivel.svg" class="attachment-thumbnail size-thumbnail" alt="Tenha mais flexibilidade em seus projetos" loading="lazy" width="110" height="110">
+                        <h3 class="card-title">Mais flexibilidade</h1>
+                        <p class="card-paragraph">
+                            Trabalhamos com contratos flexíveis que permitem que você, não apenas mude o escopo do projeto durante o desenvolvimento, mas que também possa aumentar ou reduzir seu contrato sem se preocupar com burocracias contratuais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="colophon" class="site-footer">
+        <div class="container"> <a href="mailto:contato@envolvelabs.com.br" class="site-contact-email">
+                contato@envolvelabs.com.br</a>
+            <div class="footer-bottom">
+                <address>
+                    <span class="line-1">R. Dona Francisca, 1963 - Sala 202 - Saguaçu</span><br>
+                    <span class="line-2">Joinville, SC - 89221-007</span><br> <span class="phone">Telefone: +55 (47) 9
+                        9716-0025</span> </address>
+                <ul class="social">
+                    <li> <a href="https://www.linkedin.com/company/envolve-labs/"> <img
+                                src="https://envolvelabs.com/wp-content/themes/envolvelabs/assets/images/linkedin.png"
+                                alt="Linkedin" title="Visite nosso Linkedin" width="70" height="70"> </a></li>
+                    <li> <a href="https://www.instagram.com/envolvelabs/"> <img
+                                src="https://envolvelabs.com/wp-content/themes/envolvelabs/assets/images/instagram.png"
+                                alt="Instagram" title="Visite nosso Instagram" width="70" height="70"> </a></li>
+                    <li> <a href="https://www.facebook.com/envolvelabs"> <img
+                                src="https://envolvelabs.com/wp-content/themes/envolvelabs/assets/images/facebook.png"
+                                alt="Facebook" title="Visite nosso Facebook" width="70" height="70"> </a></li>
+                </ul>
+            </div>
         </div>
-    </section>
+    </footer>
 
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>
