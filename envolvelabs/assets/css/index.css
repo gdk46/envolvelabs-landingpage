@@ -263,7 +263,7 @@
 }
 
 .home-letswork .letswork-card {  
-  height: 400px;
+  height: 345px;
   text-align: center;
   background-color: #252527;
   margin-bottom: 20px;
@@ -273,6 +273,14 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media only screen and (min-width: 740px) {
+  .home-letswork .letswork-card {  
+    height: 400px;
+  }  
+}
+
+
 
 @media only screen and (min-width: 740px) {
   .home-letswork .letswork-card {
