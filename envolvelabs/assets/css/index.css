@@ -22,18 +22,30 @@
 
 /*  */
 .banner {
-  height: 100vh;
+  height: 120vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
 }
 
+@media only screen and (min-width: 740px) {
+  .banner {
+    height: 100vh;
+  }
+}
+
 .banner .banner-overlay {
-  height: 100vh;
+  height: 120vh;
   background-color: rgba(22, 22, 22, 0.863);
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+@media only screen and (min-width: 740px) {
+  .banner .banner-overlay {
+    height: 100vh;
+  }
 }
 
 @media only screen and (min-width: 740px) {
