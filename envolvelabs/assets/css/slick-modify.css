@@ -1,0 +1,5 @@
+/* dots modify */
+.slick-dots li.slick-active button::before,
+.slick-dots li button::before {
+    color: var(--color-primary);
+}

@@ -6,20 +6,14 @@
 *
 */
 
-.uk-fixed-navigation {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 1030;
+/*  */
+.navbar-active {
+  background-color: var(--color-black);
+  transition: all 0.2s ease;
 }
+/*  */
 
-.uk-navbar-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 740px) {
   .uk-navbar-container {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -42,7 +36,7 @@
   padding-right: 1rem;
 }
 
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 740px) {
   .banner .banner-overlay {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -63,7 +57,7 @@
   margin-bottom: 4rem;
 }
 
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 740px) {
   .banner .banner-overlay h1 {
     font-size: 48px;
     width: 70%;
@@ -87,7 +81,7 @@
   margin-bottom: 10rem;
 }
 
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 740px) {
   .home-methodology h1 {
     color: rgba(254, 255, 247, 0.85);
     margin-top: 5rem;
@@ -114,9 +108,189 @@
   cursor: default;
 }
 
-@media only screen and (min-width: 540px) {
-  .home-methodology p.card-paragraph:hover {
-    color: var(--color-white);
-    transition: all 0.2s;
+/*  */
+.home-how-we-do h1.title {
+  color: rgba(254, 255, 247, 0.85);
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.home-how-we-do p.paragraph {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* . */
+.home-how-we-do .multiple-items div.card {
+  position: relative;
+  background-color: var(--color-primary);
+  height: 600px;
+  min-width: 320px;
+  cursor: grab;
+  user-select: none;
+  border-radius: 10px;
+}
+
+.home-how-we-do .multiple-items div.card:active {
+  cursor: grabbing;
+}
+
+.home-how-we-do .multiple-items div.card .solution-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2px;
+}
+
+.solution-card .solution-card-header {
+  width: 100%;
+  height: 94px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.solution-card .solution-card-header .solution-card-img {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.solution-card .solution-card-header .solution-card-img img {
+  width: 90px;
+}
+
+.solution-card .solution-card-body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.solution-card .solution-card-body h1.title-body {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.solution-card .solution-card-body p.paragraph-body {
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--color-black);
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.solution-card .solution-card-footer {
+  padding: 20px;
+}
+
+.solution-card .solution-card-footer .solution-card-arrow-left,
+.solution-card .solution-card-footer .solution-card-arrow-right {
+  font-size: 30px;  
+  color: var(--color-black);
+}
+
+.solution-card .solution-card-footer .solution-card-arrow-left {
+  float: left;
+}
+.solution-card .solution-card-footer .solution-card-arrow-right {
+  float: right;
+}
+
+@media only screen and (min-width: 740px) {
+  .home-how-we-do .multiple-items div.card {
+    margin-top: 5rem;
   }
+}
+@media only screen and (min-width: 985px) {
+  .home-how-we-do .multiple-items div.card {    
+    height: 420px;
+  }
+}
+
+/*  */
+.home-letswork h1.title {
+  color: rgba(254, 255, 247, 0.85);
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.home-letswork p.paragraph {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 740px) {
+  .home-letswork p.paragraph {
+    margin-top: 5rem;
+  }
+}
+
+.home-letswork .letswork-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+@media only screen and (min-width: 740px) {
+  .home-letswork .letswork-content {
+    margin-top: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+  }
+}
+
+.home-letswork .letswork-card {  
+  height: 400px;
+  text-align: center;
+  background-color: #252527;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 740px) {
+  .home-letswork .letswork-card {
+    width: 275px;
+    margin: 5px 2.5px 0 2.5px;
+  }
+}
+
+@media only screen and (min-width: 1290px) {
+  .home-letswork .letswork-card {
+    width: 255px;
+    height: 450px;
+  }
+}
+
+.home-letswork .letswork-card .letswork-card-circle {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: block;
+}
+
+.home-letswork .title-letswork-card {
+  margin-top: 1rem;
+  font-size: 20px;
+  color: #FFF;
+}
+
+.home-letswork .paragraph-letswork-card {
+  font-size: 18px;
+  color: rgba(254, 255, 247, 0.85);  
 }
