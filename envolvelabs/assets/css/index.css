@@ -20,7 +20,7 @@
   }
 }
 
-/*  */
+/* BANNER */
 .banner {
   height: 120vh;
   background-repeat: no-repeat;
@@ -79,7 +79,9 @@
     width: 70%;
   }
 }
+/* END BANNER */
 
+/* METHODOLOGY */
 .home-methodology h1 {
   color: rgba(254, 255, 247, 0.85);
   margin-top: 5rem;
@@ -119,8 +121,9 @@
   font-size: 20px;
   cursor: default;
 }
+/* METHODOLOGY */
 
-/*  */
+/* HOW WE DO */
 .home-how-we-do h1.title {
   color: rgba(254, 255, 247, 0.85);
   margin-top: 5rem;
@@ -133,7 +136,7 @@
   font-weight: 300;
 }
 
-/* . */
+/* HOW WE DO ---> COMPONENT CARD */
 .home-how-we-do .multiple-items div.card {
   position: relative;
   background-color: var(--color-primary);
@@ -221,8 +224,10 @@
     height: 420px;
   }
 }
+/* END HOW WE DO ---> COMPONENT CARD */
+/* END HOW WE DO */
 
-/*  */
+/* HOME LETSWORK */
 .home-letswork h1.title {
   color: rgba(254, 255, 247, 0.85);
   margin-top: 5rem;
@@ -262,6 +267,7 @@
   }
 }
 
+/* HOME LETSWORK  ----> COMPONENT CARD */
 .home-letswork .letswork-card {  
   height: 345px;
   text-align: center;
@@ -310,10 +316,12 @@
 
 .home-letswork .paragraph-letswork-card {
   font-size: 18px;
-  color: rgba(254, 255, 247, 0.85);  
+  color: rgba(254, 255, 247, 0.85);
 }
+/* END HOME LETSWORK ----> COMPONENT CARD */
+/* END HOME LETSWORK */
 
-/*  */
+/* HOME CTA */
 .home-cta h1.title {
   font-size: 50px;
   color: #606160;
@@ -356,8 +364,60 @@
     font-size: 40px;
   }
 }
+/* END HOME CTA */
 
-/*  */
+/* HOME STACK */
+.home-stack h1.title {
+  font-size: 30px;
+  color: rgba(254, 255, 247, 0.85);
+  font-weight: 500;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.home-stack .tech-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-stack ul {
+  padding: 0;
+}
+
+.home-stack .tech-group-title {
+  font-size: 22px;
+  color: #fefff7;
+  opacity: .3;
+}
+
+@media (min-width: 580px){
+
+  .home-stack ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1023px){
+  .home-stack h1.title {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .home-stack .tech-group-title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .home-stack ul {
+    text-align: center;
+  }
+}
+
+/* ========== END HOME STACK ============*/
+
+/* HOME CONTACT */
 .home-contact h1.title {
   font-size: 50px;
   color: #606160;
@@ -411,8 +471,9 @@
     margin-top: 5rem;
   }
 }
+/* HOME CONTACT */
 
-/*  */
+/* HOME FOOTER */
 .home-footer {
   padding-top: 30rem;
   padding-bottom: 20px;
@@ -468,3 +529,4 @@
     width: 70px;
   }
 }
+/* END HOME FOOTER */
